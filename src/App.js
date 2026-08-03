@@ -10,7 +10,7 @@ export default function PremiumPortfolio() {
       id: 1,
       section: "Raw Mixes",
       category: "Film Scoring",
-      raw: "/audio/pop edm punk haestle raw.mp3",
+      raw: "/audio/raw112.mp3",
       mixed: "/audio/pop edm punk haestle mstrd.mp3",
     },
     {
@@ -178,9 +178,28 @@ const togglePlay = async (id) => {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/10 py-10 text-center text-white/40 text-sm">
-        © 2026 Hari Ram • All Rights Reserved
-      </footer>
+      <footer className="border-t border-white/10 py-10 text-center">
+  <p className="text-white/40 text-sm">
+    © 2026 Hari Ram • All Rights Reserved
+  </p>
+
+  <p className="mt-3 text-sm text-white/60">
+    For <span className="font-medium text-white">Mixing, Mastering & Music</span> queries, contact:
+  </p>
+
+  <p className="mt-2 text-white/80">
+    📞 <a href="tel:+918008236984" className="hover:text-white transition">
+      +91 80082 36984
+    </a>
+    {" • "}
+    ✉️ <a
+      href="mailto:ramahari2278@gmail.com"
+      className="hover:text-white transition"
+    >
+      ramahari2278@gmail.com
+    </a>
+  </p>
+</footer>
     </div>
   );
 }
