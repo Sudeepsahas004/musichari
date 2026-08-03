@@ -10,15 +10,15 @@ export default function PremiumPortfolio() {
       id: 1,
       section: "Raw Mixes",
       category: "Film Scoring",
-      raw: "/audio/pop_raw.mp3",
-      mixed: "/audio/pop_mastered.mp3",
+      raw: "/audio/pop edm punk haestle raw.mp3",
+      mixed: "/audio/pop edm punk haestle mstrd.mp3",
     },
     {
       id: 2,
       section: "Raw Mixes",
       category: "Commercial Music",
-      raw: "/audio/mainstream_hiphop_raw.mp3",
-      mixed: "/audio/mainstream_hiphop.mp3",
+      raw: "/audio/hip hop raw.mp3",
+      mixed: "/audio/hip hop mastered.mp3",
     },
 
     // ==========================
@@ -29,8 +29,8 @@ export default function PremiumPortfolio() {
       id: 4,
       section: "Original Compositions",
       category: "Background Score",
-      raw: "/audio/hip hop raw.mp3",
-      mixed: "/audio/hip hop mastered.mp3",
+      raw: "/audio/the hip hop 3 raw.mp3",
+      mixed: "/audio/the hip hop 3 mstred.mp3",
     },
   ];
 
@@ -95,7 +95,7 @@ const togglePlay = async (id) => {
       </section>
 
       {/* TRACKS */}
-      <section className="max-w-6xl mx-auto px-4 md:px-6 py-16 space-y-20">
+      <section className="max-w-6xl mx-auto px-4 md:px-6 py-10 space-y-20">
         {Object.entries(groupedTracks).map(([section, items]) => (
           <div key={section}>
             {/* Section Heading */}
@@ -107,12 +107,12 @@ const togglePlay = async (id) => {
             </div>
 
             {/* Tracks */}
-            <div className="space-y-12">
+            <div className="space-y-10">
               {items.map((track) => (
                 <div key={track.id}>
-                  <h3 className="text-lg md:text-xl text-white/70 mb-5">
+                  {/* <h3 className="text-lg md:text-xl text-white/70 mb-5">
                     {track.category}
-                  </h3>
+                  </h3> */}
 
                   <div className="flex flex-col md:flex-row gap-6">
                     <AudioCard
@@ -126,7 +126,7 @@ const togglePlay = async (id) => {
                     />
 
                     <AudioCard
-                      label="MASTERED"
+                      label="MASTERED AUDIO"
                       src={track.mixed}
                       id={`mix-${track.id}`}
                       color="text-blue-400"
