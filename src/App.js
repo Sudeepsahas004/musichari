@@ -142,6 +142,26 @@ const togglePlay = async (id) => {
         ))}
       </section>
 
+      {/* MID-PAGE IMAGE BANNER */}
+<section className="px-4 md:px-10 py-12">
+  <div className="max-w-[600px] mx-auto overflow-hidden rounded-xl">
+        <h2 className="text-2xl md:text-4xl 
+      font-light text-center mb-8">
+      Movie Music
+      <span className="font-semibold text-purple-400">
+        {" "}Composed & Produced By Me
+      </span>
+    </h2>
+
+
+    <img
+      src="/images/fasads.jpeg"
+      alt="Music Production Studio"
+      className="w-full h-[220px] md:h-[700px] object-cover"
+    />
+  </div>
+</section>
+
       {/* FEATURED CLIENT */}
       <section className="border-t border-white/10 px-6 md:px-10 py-16 md:py-24">
         <div className="max-w-5xl mx-auto">
