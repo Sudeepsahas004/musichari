@@ -147,7 +147,7 @@ const togglePlay = async (id) => {
   <div className="max-w-[600px] mx-auto overflow-hidden rounded-xl">
         <h2 className="text-2xl md:text-4xl 
       font-light text-center mb-8">
-      Movie Music
+      Short Film Music
       <span className="font-semibold text-purple-400">
         {" "}Composed & Produced By Me
       </span>
@@ -157,7 +157,7 @@ const togglePlay = async (id) => {
     <img
       src="/images/fasads.jpeg"
       alt="Music Production Studio"
-      className="w-full h-[220px] md:h-[700px] object-cover"
+      className="w-full h-[420px] md:h-[700px] object-cover"
     />
   </div>
 </section>
